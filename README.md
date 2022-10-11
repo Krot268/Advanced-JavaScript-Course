@@ -1,1 +1,1 @@
-# Advanced-JavaScript-Course
+# Teach Advanced-JavaScript-Course
