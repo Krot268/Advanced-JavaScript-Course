@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="header">
+    <form action="#" class="form">
+      <div class="field">
+        <input type="text" placeholder="Имя" id="1" class="input" required pattern="\D+[А-Яа-я]">
+        <input type="text" placeholder="Телефон" id="2" class="input" required pattern="[0-9 + - ()]">
+        <input type="text" placeholder="E-mail" id="3" class="input" required pattern="\S+@[a-z]+.[a-z]+">
+        <input type="text" placeholder="Текст" id="4" class="input" required>
+        <button class="button">Отправить</button>
+      </div>
+    </form>
+  </section>
+
+  <script>
+    'use strict';
+
+    const input = document.querySelectorAll(`.input`);
+
+    input.forEach((Element) => {
+      if (input === true) {
+        console.log(`отправка данных на сервер`)
+      } else {
+        return false;
+      }
+    });
+
+    const bttn = document.querySelectorAll(`.button`);
+
+  </script>
+</body>
+
+</html>
